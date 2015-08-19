@@ -1,0 +1,21 @@
+{
+  "name": "TripPlannerStatic",
+  "version": "0.0.0",
+  "authors": [
+    "Karen MacPherson <kam0112@gmail.com>"
+  ],
+  "description": "Trip planner!",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
