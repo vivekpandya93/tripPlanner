@@ -1,3 +1,102 @@
-h1 {
-  color: red;
+
+
+* {
+  box-sizing: border-box;
 }
+
+h1 {
+  font-size: 20px;
+}
+
+body {
+  background-image: url("http://data.whicdn.com/images/5834556/original.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.event-box {
+  border: 3px solid white;
+  padding: 20px;
+  border-radius:5%;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+
+}
+
+select {
+  display: block;
+  width: 100%;
+}
+
+
+h2 {
+  font-size: 16px;
+}
+
+
+
+#map {
+  height: 75vh;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: 3px solid white;
+  height: 60px;
+}
+
+
+.days {
+  li {
+    border-radius: 5%;
+    list-style: none;
+    display: inline;
+    padding: 8px;
+    margin: 5px;
+
+    background-color: white;
+    color: black;
+    font-weight: bold;
+
+    &.active {
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+    }
+  }
+
+
+  padding: 10px 0;
+
+}
+
+.today {
+  border-color: gray;
+}
+
+#nav-items {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+    &:hover {
+    text-decoration: underline;
+  }
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+  font-size: 28px;
+}
+

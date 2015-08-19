@@ -2,22 +2,65 @@
 
 {% block content %}
 
-<br>
-<br>
-<br>
-  <select>
-  {% for hotel in hotels %}
-        <option>{{hotel.name}}</option>
-  {% endfor %}
-</select>
-  <select>
-  {% for activity in activities %}
-        <option>{{activity.name}}</option>
-  {% endfor %}
-</select>
-  <select>
-  {% for restaurant in restaurants %}
-        <option>{{restaurant.name}}</option>
-  {% endfor %}
-</select>
+<div class='row'>
+<div class="container-fluid event-box col-lg-2">
+
+  <h1>Plan Your Day!</h1>
+  <div class='form-group'>
+    <label for='Hotels'><span class='glyphicon glyphicon-home'></span> Hotels</label>
+    <select class='form-control' id='Hotels'>
+    {% for hotel in hotels %}
+          <option>{{hotel.name}}</option>
+    {% endfor %}
+    </select>
+  </div>
+
+    <div class='form-group'>
+    <label for='Activities'><span class='glyphicon glyphicon-camera'></span> Activities</label>
+    <select class='form-control' id='Activities'>
+    {% for activity in activities %}
+          <option>{{activity.name}}</option>
+    {% endfor %}
+    </select>
+    </div>
+
+    <div class='form-group'>
+    <label for='Restaurants'><span class='glyphicon glyphicon-cutlery'></span> Restaurants</label>
+    <select class='form-control' id='Restaurants'>
+    {% for restaurant in restaurants %}
+          <option>{{restaurant.name}}</option>
+    {% endfor %}
+    </select>
+    </div>
+</div>
+
+<div class='map col-lg-7'>
+  <div id = 'map'> </div>
+</div>
+
+<div class='event-box col-lg-3'>
+  <h1>Today's Events</h1>
+
+  <ul class ='days'>
+    <li>Day</li>
+    <li class='active'>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>+</li>
+  </ul>
+
+  <div class='today event-box'>
+    <h2>My Hotel<h2>
+      <p>Andaz Wall Street<p>
+
+
+  </div>
+
+
+</div>
+
+
+</div>
+
+
 {% endblock %}
