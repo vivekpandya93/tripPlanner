@@ -6,6 +6,7 @@
 
 h1 {
   font-size: 20px;
+  margin-top: 5px;
 }
 
 body {
@@ -35,13 +36,14 @@ select {
 
 
 h2 {
-  font-size: 16px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 
 
 #map {
-  height: 75vh;
+  height: 80vh;
   border: 3px solid white;
   border-radius: 5px;
 }
@@ -99,4 +101,29 @@ h2 {
   }
   font-size: 28px;
 }
+
+.today {
+  p {
+    padding-left: 15px;
+  }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .event-box {
+    margin: 15px;
+  }
+  
+}
+
+
+@media (max-width: 1200px) {
+  .planning {
+    margin-top: 15px;
+  }
+  
+}
+
+
 

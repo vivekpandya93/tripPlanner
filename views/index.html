@@ -3,10 +3,45 @@
 {% block content %}
 
 <div class='row'>
-<div class="container-fluid event-box col-lg-2">
 
-  <h1>Plan Your Day!</h1>
-  <div class='form-group'>
+<div class='event-box col-lg-3 col-md-4 col-sm-12'>
+  <h1>Today's Events</h1>
+
+<ul class ='days'>
+    <li>Day</li>
+    <li class='active'>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>+</li>
+  </ul>
+  <div class='today event-box'>
+    <h2>My Hotel</h2>
+      <p>Andaz Wall Street</p>
+    <hr>
+    <h2>My Activities</h2>
+      <p>South Street Seaport</p>
+      <p>Ground Zero</p>
+    <hr>
+    <h2>My Restaurants</h2>
+      <p>Bouley</p>
+      <p>Cafe Katja</p>
+  </div>
+</div>
+
+  
+
+<div class='map col-lg-7 col-md-8 col-sm-12'>
+  <div id = 'map'> </div>
+</div>
+
+
+
+
+  
+
+<div class="container-fluid planning event-box col-lg-2 col-md-12 col-sm-12">
+<h1>Plan Your Day!</h1>
+  <div class='form-group col-lg-12 col-md-4'>
     <label for='Hotels'><span class='glyphicon glyphicon-home'></span> Hotels</label>
     <select class='form-control' id='Hotels'>
     {% for hotel in hotels %}
@@ -15,7 +50,7 @@
     </select>
   </div>
 
-    <div class='form-group'>
+    <div class='form-group col-lg-12 col-md-4'>
     <label for='Activities'><span class='glyphicon glyphicon-camera'></span> Activities</label>
     <select class='form-control' id='Activities'>
     {% for activity in activities %}
@@ -24,7 +59,7 @@
     </select>
     </div>
 
-    <div class='form-group'>
+    <div class='form-group col-lg-12 col-md-4'>
     <label for='Restaurants'><span class='glyphicon glyphicon-cutlery'></span> Restaurants</label>
     <select class='form-control' id='Restaurants'>
     {% for restaurant in restaurants %}
@@ -34,30 +69,7 @@
     </div>
 </div>
 
-<div class='map col-lg-7'>
-  <div id = 'map'> </div>
-</div>
 
-<div class='event-box col-lg-3'>
-  <h1>Today's Events</h1>
-
-  <ul class ='days'>
-    <li>Day</li>
-    <li class='active'>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>+</li>
-  </ul>
-
-  <div class='today event-box'>
-    <h2>My Hotel<h2>
-      <p>Andaz Wall Street<p>
-
-
-  </div>
-
-
-</div>
 
 
 </div>
