@@ -30,7 +30,7 @@ h2 {
   margin-top: 10px; }
 
 #map {
-  height: 80vh;
+  height: 72vh;
   border: 3px solid white;
   border-radius: 5px; }
 
@@ -74,6 +74,9 @@ h2 {
 
 .today p {
   padding-left: 15px; }
+
+.form-group {
+  padding: 3px; }
 
 /* Medium devices (desktops, 992px and up) */
 @media (max-width: 992px) {
